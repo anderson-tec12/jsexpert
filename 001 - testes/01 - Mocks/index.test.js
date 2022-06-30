@@ -26,22 +26,22 @@ const { rejects, deepStrictEqual } = require("assert");
         "id": 123,
         "name": "Anderson B.",
         "profession": "Front End",
-        "age": 29
+        "birthDay": 1993
       },
       {
         "id": 321,
         "name": "xuxa da silva",
         "profession": "Backend",
-        "age": 20
+        "birthDay": 1993
       },
       {
         "id": 322,
         "name": "joaozinho ciclano",
         "profession": "fullstack",
-        "age": 24
+        "birthDay": 1993
       }
     ];
 
-    deepStrictEqual(result, expected)
+    deepStrictEqual(JSON.stringify(result), JSON.stringify(expected))
   }
 })();
