@@ -1,0 +1,12 @@
+class Tax {
+  static get taxesBaseOnAge() {
+    return [
+      { from: 18, to: 25, then: 1.1 },
+      { from: 26, to: 30, then: 1.5 },
+      { from: 31, to: 100, then: 1.3 },
+      // {from:0,to:25, then:0},
+    ];
+  }
+}
+
+module.exports = Tax;
